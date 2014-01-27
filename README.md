@@ -4,6 +4,16 @@
 This project contains a number of tools for common routines, mongodb usage & administration, and swagger
 
 ### To build
+You'll need Java6 to compile this.
+
+May throw unrelated errors such as:
+
+Detected sbt version 0.12.2
+Can't start up: not enough memory
+
+If running on Java 5.
+
+
 ./sbt compile
 
 This will build all the OSS modules.  You can see more on each modules home page:
