@@ -36,6 +36,11 @@ import com.mongodb.BasicDBObject;
 import com.wordnik.util.PrintFormat;
 
 public class Analyzer extends MongoUtil {
+  private static final Object inserts = null;
+  private static final Object updates = null;
+  private static final Object deletes = null;
+  private static final Object skips = null;
+
   protected static String INPUT_DIR;
   protected static String COLLECTION_STRING;
   protected static String COLLECTION_MAPPING_STRING;
