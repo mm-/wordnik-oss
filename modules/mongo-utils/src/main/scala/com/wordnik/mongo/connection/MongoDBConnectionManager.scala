@@ -83,7 +83,8 @@ object MongoDBConnectionManager {
       if (server.replicationType == Member.RS)
         coll = Some(server.db.getCollection("oplog.rs"))
       else if (server.replicationType == Member.M)
-        coll = Some(server.db.getCollection("oplog.$main"))
+      //  coll = Some(server.db.getCollection("oplog.$main"))
+        coll = Some(server.db.getCollection("oplog.rs"))
     })
     coll
   }
