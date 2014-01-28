@@ -202,7 +202,8 @@ public class OplogTailThread extends Thread {
 	        }
 	        catch(com.mongodb.MongoException ex){
 	        	writeLastTimestamp(lastTimestamp);
-	        	System.out.println("Internal exception, waiting");
+	        //	System.out.println("Internal exception, waiting");
+			ex.printStackTrace();
 	        	Thread.sleep(2000);
 	        }
 	        catch(Exception ex){
